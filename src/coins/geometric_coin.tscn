@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0qo6l33v12go"]
+
+[ext_resource type="PackedScene" uid="uid://blbe8fw1i64b3" path="res://src/coins/coin.tscn" id="1_23rmt"]
+[ext_resource type="Script" path="res://src/coins/geometric_coin.gd" id="2_uryra"]
+
+[node name="GeometricCoin" instance=ExtResource("1_23rmt")]
+script = ExtResource("2_uryra")

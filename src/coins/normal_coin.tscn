@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://cydodil5issh8"]
+
+[ext_resource type="PackedScene" uid="uid://blbe8fw1i64b3" path="res://src/coins/coin.tscn" id="1_v4lwb"]
+[ext_resource type="Script" path="res://src/coins/normal_coin.gd" id="2_nkldv"]
+
+[node name="NormalCoin" instance=ExtResource("1_v4lwb")]
+script = ExtResource("2_nkldv")

@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbw4w2tfto70c"]
+
+[ext_resource type="PackedScene" path="res://src/entities/Flipper.tscn" id="1_xfgmp"]
+[ext_resource type="Script" path="res://src/entities/enemy.gd" id="2_ttshf"]
+
+[node name="Enemy" instance=ExtResource("1_xfgmp")]
+script = ExtResource("2_ttshf")
