@@ -1,3 +1,4 @@
+class_name CombatManager
 extends Node
 
 var PLAYER = 0
@@ -21,3 +22,16 @@ func fight():
 		return [ENEMY, player_score, enemy_score]
 	else:
 		return [TIE, player_score, enemy_score]
+
+func get_player():
+	return player
+
+func set_player(new_player):
+	player = new_player
+
+func get_enemy():
+	return enemy
+
+func set_enemy(new_enemy):
+	enemy = new_enemy
+

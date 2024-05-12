@@ -1,15 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://djrvvc8h0vnu8"]
+[gd_scene load_steps=8 format=3 uid="uid://djrvvc8h0vnu8"]
 
 [ext_resource type="Script" path="res://src/system/Tester.gd" id="1_pfgut"]
 [ext_resource type="PackedScene" uid="uid://d4ndimqqep4vi" path="res://src/coins/head.tscn" id="2_45xp4"]
+[ext_resource type="PackedScene" uid="uid://cwo7ndpm6ef68" path="res://src/entities/Flipper.tscn" id="2_whqal"]
 [ext_resource type="PackedScene" uid="uid://b0qo6l33v12go" path="res://src/coins/geometric_coin.tscn" id="3_g7c4h"]
 [ext_resource type="PackedScene" uid="uid://cydodil5issh8" path="res://src/coins/normal_coin.tscn" id="4_dgw8l"]
+[ext_resource type="PackedScene" uid="uid://wfu20bvryfjc" path="res://src/entities/player.tscn" id="6_vum07"]
+[ext_resource type="PackedScene" uid="uid://bbw4w2tfto70c" path="res://src/entities/enemy.tscn" id="7_bwp8g"]
 
 [node name="Tester" type="Node"]
 script = ExtResource("1_pfgut")
+
+[node name="Flipper" parent="." instance=ExtResource("2_whqal")]
 
 [node name="Head" parent="." instance=ExtResource("2_45xp4")]
 
 [node name="GeometricCoin" parent="." instance=ExtResource("3_g7c4h")]
 
 [node name="NormalCoin" parent="." instance=ExtResource("4_dgw8l")]
+
+[node name="Player" parent="." instance=ExtResource("6_vum07")]
+
+[node name="Enemy" parent="." instance=ExtResource("7_bwp8g")]

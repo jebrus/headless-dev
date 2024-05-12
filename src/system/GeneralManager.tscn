@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtmppdbhsvcwp"]
+
+[ext_resource type="PackedScene" uid="uid://bmeh1uf8eq5k3" path="res://src/system/EnvironmentManager.tscn" id="1_x7jw1"]
+[ext_resource type="PackedScene" uid="uid://cmnfjt7o82tpf" path="res://src/system/CombatManager.tscn" id="2_4s2nh"]
+
+[node name="GeneralManager" type="Node2D"]
+
+[node name="EnvironmentManager" parent="." instance=ExtResource("1_x7jw1")]
+
+[node name="CombatManager" parent="." instance=ExtResource("2_4s2nh")]

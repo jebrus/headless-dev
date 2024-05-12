@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://iyv400c7bm0y"]
+
+[ext_resource type="Script" path="res://backdrop.gd" id="1_rsw3a"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_nc7oh"]
+
+[node name="Scene" type="Node2D"]
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(824, 554.5)
+scale = Vector2(2672, 1387)
+texture = SubResource("CanvasTexture_nc7oh")
+script = ExtResource("1_rsw3a")

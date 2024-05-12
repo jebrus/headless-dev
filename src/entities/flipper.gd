@@ -9,6 +9,7 @@ func _ready():
 
 func add_coin(coin):
 	coins.append(coin)
+	print(coins)
 	
 func flip_coins():
 	var heads = 0

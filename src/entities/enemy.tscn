@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbw4w2tfto70c"]
+[gd_scene load_steps=4 format=3 uid="uid://bbw4w2tfto70c"]
 
-[ext_resource type="PackedScene" path="res://src/entities/Flipper.tscn" id="1_xfgmp"]
+[ext_resource type="PackedScene" uid="uid://cwo7ndpm6ef68" path="res://src/entities/Flipper.tscn" id="1_xfgmp"]
 [ext_resource type="Script" path="res://src/entities/enemy.gd" id="2_ttshf"]
+[ext_resource type="Texture2D" uid="uid://n4o8kaven2ni" path="res://stills/enemies/larry.png" id="3_0xigw"]
 
 [node name="Enemy" instance=ExtResource("1_xfgmp")]
 script = ExtResource("2_ttshf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="0"]
+position = Vector2(960, 540)
+scale = Vector2(0.969697, 1)
+texture = ExtResource("3_0xigw")
