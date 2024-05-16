@@ -13,3 +13,6 @@ func _process(delta):
 
 func flip():
 	return Vector2(-1, -1) # Heads and tails marked separately
+
+func get_coin_name():
+	return "Coin"
