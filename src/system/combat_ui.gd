@@ -7,6 +7,7 @@ var enemy = null
 var player_coin_list = null
 var enemy_coin_list = null
 var enemy_coin_label = null
+signal flip_button_pressed
 
 var head = preload("res://src/coins/head.gd")
 var normal_coin = preload("res://src/coins/normal_coin.gd")
@@ -44,3 +45,14 @@ func add_enemy(new_enemy):
 	enemy_coin_label.clear()
 	enemy_coin_label.add_item(enemy.get_enemy_name() + "'s coins:")
 
+func _on_flip_pressed():
+	emit_signal("flip_button_pressed")
+#
+func get_player_coin_label(index):
+	if index >= 0 and index < player_coin_list.get_item_count():
+		return player_coin_list.get_item_text(index)
+	else:
+		return null
+#
+#func _on_player_coin_list_multi_selected(index, selected):
+#	print($PlayerCoinList.get_selected_items().map(get_player_coin_label)

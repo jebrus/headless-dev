@@ -61,3 +61,12 @@ text = "Flip!"
 
 [node name="Enemy" parent="." instance=ExtResource("3_xo4kt")]
 visible = false
+
+[node name="CombatText" type="RichTextLabel" parent="."]
+offset_left = 645.0
+offset_top = 188.0
+offset_right = 1246.0
+offset_bottom = 499.0
+
+[connection signal="multi_selected" from="PlayerCoinList" to="." method="_on_player_coin_list_multi_selected"]
+[connection signal="pressed" from="Flip" to="." method="_on_flip_pressed"]

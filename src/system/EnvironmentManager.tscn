@@ -48,3 +48,4 @@ script = ExtResource("6_esqqb")
 [node name="CombatLayer" type="CanvasLayer" parent="."]
 
 [node name="CombatUI" parent="CombatLayer" instance=ExtResource("6_601ro")]
+visible = false
